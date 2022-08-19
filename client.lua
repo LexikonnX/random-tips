@@ -6,7 +6,7 @@ local tips = {
 Citizen.CreateThread(function()
     while true do
         local rand = math.random(1,getTableSize(tips))
-        ESX.ShowAdvancedNotification('RANDOM TIP', tips[rand].value1,tips[rand].value2, "CHAR_DEFAULT", 8)
+        ESX.ShowAdvancedNotification('RANDOM TIP', tips[rand].value1,tips[rand].value2, "CHAR_SOCIAL_CLUB", 8)
         Citizen.Wait(interval*1000*60)
     end
 end)
